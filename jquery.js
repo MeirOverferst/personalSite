@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	//
+	
 	$(".ham").click(function () {
 		$("#nav-icon").toggleClass('open');
 		$('.navigator .navigator').css('display', 'none');
@@ -17,8 +17,7 @@ $(document).ready(function () {
 			$(".navigator").removeAttr('style');
 		}
 	});
-	//
-	///
+
 	$('.slide-container').each(function () {
 		let currentslide = 0;
 		let $slider = $(this).find('.slide-item'),
@@ -53,8 +52,8 @@ $(document).ready(function () {
 		$next.on("click", next);
 		$prev.on("click", prev);
 	});
-	///
-	////
+
+
 	$('.navigator .actual a').click(function (e) {
 		let targetHref = $(this).attr('href');
 		$('html, body').animate({
@@ -62,9 +61,6 @@ $(document).ready(function () {
 		}, 500);
 		e.preventDefault();
 	});
-	////
-
-	/////
 	$(window).scroll(function () {
 		let sections = ['home', 'projects', 'skills', 'about', 'contact'];
 		let current;
