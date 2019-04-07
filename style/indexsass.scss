@@ -671,7 +671,7 @@
 
 @import "./values.scss";
 
-@media (max-width:$screenLg) {
+@media only screen and (max-width:$screenLg) and (max-aspect-ratio: 13/9){
   html {
     font-size: 0.76em
   }
