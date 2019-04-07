@@ -130,7 +130,7 @@
           box-sizing: border-box;
   height: 100vh;
   width: 100%;
-  background-image: url(./stickersorgslate.jpg);
+  background-image: url(../stickersorgslate.jpg);
   -webkit-filter: blur(9px);
           filter: blur(9px);
   background-position: center;
@@ -355,7 +355,7 @@
 .bg {
   width: inherit;
   height: inherit;
-  background-image: url(./wallhaven-120534.png);
+  background-image: url(../wallhaven-120534.png);
   background-position: center;
   background-size: cover;
 }
@@ -484,7 +484,7 @@
   border: 1px solid black;
   width: 90%;
   height: 65%;
-  background-image: url(./wallhaven-gimp-blur.png);
+  background-image: url(../wallhaven-gimp-blur.png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
