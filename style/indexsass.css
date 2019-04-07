@@ -372,7 +372,7 @@
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   width: 20rem;
-  right: 1.25rem;
+  right: 5em;
 }
 
 .box {
@@ -409,7 +409,7 @@
   z-index: 7;
   position: relative;
   top: 13.5em;
-  left: 103em;
+  left: 97em;
 }
 
 .legend {
@@ -421,10 +421,10 @@
 
 .legend h1 {
   z-index: 1;
-  width: 44.5em;
+  width: 52em;
   position: relative;
   top: 4.85em;
-  left: 18.25em;
+  left: 14.2em;
   margin-top: 1.7em;
   border-bottom: 1.25px solid lightgrey;
 }
@@ -743,7 +743,6 @@
     z-index: 7;
     position: relative;
     top: 12.75em;
-    left: 102.5em;
   }
   .legend {
     position: absolute;
@@ -753,10 +752,8 @@
   }
   .legend h1 {
     z-index: 1;
-    width: 54em;
     position: relative;
     top: 4.85em;
-    left: 16.5em;
     margin-top: 1.7em;
     border-bottom: 1.25px solid lightgrey;
   }
@@ -815,7 +812,6 @@
     z-index: 7;
     position: relative;
     top: 12.75em;
-    left: 101em;
   }
   .legend h1 p {
     left: 64.5em;
@@ -838,7 +834,7 @@
   }
   .thanos {
     top: 5em;
-    left: 91em;
+    left: 86em;
   }
   #skills {
     height: 95vh;
@@ -847,13 +843,13 @@
     top: 3.8em;
   }
   .legend h1 {
-    width: 47em;
+    width: 45em;
     top: 0.01em;
-    left: 17em;
+    left: 1.4em;
     margin-top: 1.9em;
   }
   .legend h1 p {
-    left: 54em;
+    left: 55em;
   }
   #projects {
     height: 95vh;
@@ -917,7 +913,7 @@
     font-size: 2em;
   }
   #projects {
-    height: 285vh;
+    height: 300vh;
   }
   .projectsContainer {
     display: block;
@@ -1012,7 +1008,6 @@
   .legend h1 {
     width: 26em;
     top: 3em;
-    left: 2em;
     margin-top: 2.1em;
   }
   .legend h1 span {
@@ -1149,7 +1144,7 @@
     padding: 0.1rem 0rem 1.4em 0rem;
   }
   #projects {
-    height: 250vh;
+    height: 265vh;
   }
   .slide-container ul {
     width: 30em;
@@ -1158,13 +1153,18 @@
     width: 90%;
     height: 12em;
   }
+  .bigBox {
+    margin-top: 20rem;
+    width: 20em;
+    right: 6.5em;
+  }
   .bigBigBox {
     top: -4rem;
   }
   .thanos {
     width: 2.5em;
     top: 11.5em;
-    left: 43em;
+    left: 41em;
   }
   .legend {
     width: 45em;
@@ -1173,11 +1173,10 @@
   .legend h1 {
     width: 27.75em;
     top: 3em;
-    left: 2.5em;
     margin-top: 1.95em;
   }
   .legend h1 p {
-    left: 28.5em;
+    left: 28.1em;
     font-size: 0.73em;
   }
 }
@@ -1185,9 +1184,6 @@
 @media (max-width: 320px) {
   html {
     font-size: 0.46em;
-  }
-  #projects {
-    height: 270vh;
   }
   .slide-container ul {
     width: 30em;
@@ -1198,11 +1194,6 @@
   }
   .projectBox .tryIt {
     left: 14.7em;
-  }
-  .bigBox {
-    margin-top: 20rem;
-    width: 20em;
-    right: 6.5em;
   }
   .thanos {
     width: 2.5em;
@@ -1217,7 +1208,6 @@
   .legend h1 {
     width: 27.5em;
     top: 4.85em;
-    left: 0.45em;
   }
   .legend h1 span {
     font-weight: 600;

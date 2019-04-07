@@ -363,7 +363,7 @@
   transform: rotate(270deg);
   width: 20rem;
   // top: 1%;
-  right: 1.25rem;
+  right: 5em;
 }
 
 .box {
@@ -398,7 +398,7 @@
   z-index: 7;
   position: relative;
   top: 13.5em;
-  left: 103em;
+  left: 97em;
 
 }
 
@@ -411,10 +411,10 @@
 
   & h1 {
     z-index: 1;
-    width: 44.5em;
+    width: 52em;
     position: relative;
     top: 4.85em;
-    left: 18.25em;
+    left: 14.2em;
     margin-top: 1.7em;
     border-bottom: 1.25px solid lightgrey;
 
@@ -681,7 +681,7 @@
     z-index: 7;
     position: relative;
     top: 12.75em;
-    left: 102.5em;
+    // left: 102.5em;
 
   }
 
@@ -693,10 +693,10 @@
 
     & h1 {
       z-index: 1;
-      width: 54em;
+      // width: 54em;
       position: relative;
       top: 4.85em;
-      left: 16.5em;
+      // left: 16.5em;
       margin-top: 1.7em;
       border-bottom: 1.25px solid lightgrey;
 
@@ -773,7 +773,7 @@
     z-index: 7;
     position: relative;
     top: 12.75em;
-    left: 101em;
+    // left: 101em;
   }
 
   .legend {
@@ -807,7 +807,7 @@
 
   .thanos {
     top: 5em;
-    left: 91em;
+    left: 86em;
   }
 
   #skills {
@@ -818,13 +818,13 @@
     top: 3.8em;
 
     & h1 {
-      width: 47em;
+      width: 45em;
       top: 0.01em;
-      left: 17em;
+      left: 1.4em;
       margin-top: 1.9em;
 
       p {
-        left: 54em;
+        left: 55em;
       }
     }
   }
@@ -890,7 +890,6 @@
   .ham {
     display: block;
   }
-
   .navigator {
     display: none;
     background: rgb(240, 239, 239);
@@ -909,7 +908,7 @@
   }
 
   #projects {
-    height: 285vh;
+    height: 300vh;
   }
 
   .projectsContainer {
@@ -1038,7 +1037,7 @@
     & h1 {
       width: 26em;
       top: 3em;
-      left: 2em;
+      // left: 2em;
       margin-top: 2.1em;
 
       span {
@@ -1186,7 +1185,7 @@
   }
 
   #projects {
-    height: 250vh;
+    height: 265vh;
   }
 
   .slide-container ul {
@@ -1199,7 +1198,12 @@
       }
     }
   }
-
+  .bigBox {
+    margin-top: 20rem;
+    width: 20em;
+    ////////move the skilbars
+    right: 6.5em;
+  }
   .bigBigBox {
     top: -4rem;
   }
@@ -1207,7 +1211,7 @@
   .thanos {
     width: 2.5em;
     top: 11.5em;
-    left: 43em;
+    left: 41em;
   }
 
   .legend {
@@ -1217,11 +1221,11 @@
     & h1 {
       width: 27.75em;
       top: 3em;
-      left: 2.5em;
+      // left: 2.5em;
       margin-top: 1.95em;
 
       p {
-        left: 28.5em;
+        left: 28.1em;
         font-size: 0.73em;
       }
     }
@@ -1233,9 +1237,7 @@
     font-size: 0.46em;
   }
 
-  #projects {
-    height: 270vh;
-  }
+
 
   .slide-container ul {
     width: 30em;
@@ -1254,12 +1256,7 @@
     }
   }
 
-  .bigBox {
-    margin-top: 20rem;
-    width: 20em;
-    ////////move the skilbars
-    right: 6.5em;
-  }
+
 
   .thanos {
     width: 2.5em;
@@ -1275,7 +1272,7 @@
     & h1 {
       width: 27.5em;
       top: 4.85em;
-      left: 0.45em;
+      // left: 0.45em;
 
       span {
         font-weight: 600;
