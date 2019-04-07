@@ -1023,7 +1023,7 @@
     font-size: 0.6em;
   }
   #about {
-    height: 250vh;
+    height: 300vh;
   }
   #about .penBox {
     margin: 7em auto 0 auto;
@@ -1224,9 +1224,6 @@
   }
   .techImgBox6 > .img {
     top: -0.25em;
-  }
-  #about {
-    height: 305vh;
   }
   #contact {
     height: 100vh;
