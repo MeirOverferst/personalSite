@@ -6,14 +6,14 @@ $(document).ready(function () {
 		$(".navigator").slideToggle();
 	});
 	$(".navigator .actual").click(function () {
-		if ($(window).width() < 426) {
+		if ($(window).width() <600) {
 			$("#nav-icon").toggleClass('open');
 			$(".navigator").slideUp();
 			$(this).find(".actual").slideToggle();
 		}
 	});
 	$(window).resize(function () {
-		if ($(window).width() > 425) {
+		if ($(window).width() > 600) {
 			$(".navigator").removeAttr('style');
 		}
 	});
@@ -57,7 +57,7 @@ $(document).ready(function () {
 	$('.navigator .actual a').click(function (e) {
 		let targetHref = $(this).attr('href');
 		$('html, body').animate({
-			scrollTop: $(targetHref).offset().top - 40
+			scrollTop: $(targetHref).offset().top - 25
 		}, 500);
 		e.preventDefault();
 	});
@@ -93,14 +93,3 @@ $(document).ready(function () {
 	/////
 
 })
-
-
-// $(".actual").hover(function () {
-// 	$(this).find(".dot").animate({
-// 		width: 'toggle'
-// 	}, 400);
-// });
-//scrollDown Gif
-//add fadeout effect
-//add animated gif
-//add function for running again if user return to top ;

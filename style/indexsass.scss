@@ -47,7 +47,7 @@
   background: rgb(240, 239, 239);
   color: rgb(0, 0, 0);
   font-size: 1.6em;
-  padding: 0.1rem 0rem 1.35rem 0rem;
+  padding: 0.1em 0em 0.1em 0em;
   display: none;
   // border-bottom: 0.25px solid lightblue;
 }
@@ -182,30 +182,31 @@
 
 #projects {
   // border-top: 1px solid lightblue;
-  height: 100vh;
+  // height: 100vh;
   box-sizing: border-box;
   background: rgb(240, 239, 239);
 
 }
 
 .h1Titel {
-  margin-top: 0rem;
+  // margin-top: 1em;
   position: relative;
-  top: 0.75em;
+  top: 1.25em;
   font-size: 3em;
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
 .projectsContainer {
-  top: 2.75em;
+  // top: 2.75em;
+  margin: 5em auto 0 auto;
   position: relative;
   box-sizing: border-box;
-  width: 80vw;
-  height: 80vh;
+  // width: 80vw;
+  // height: 80vh;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  // margin: 0 auto;
   justify-content: space-between;
 }
 
@@ -216,6 +217,11 @@
   border-radius: 1.5%;
   height: 20em;
   margin: 1.25em;
+  @media( max-width:763px){
+    margin: 1.25em auto;
+  
+  }
+
   font-family: 'Roboto', sans-serif;
 
   .projectBox-titel {
@@ -318,9 +324,10 @@
 
 ////
 #skills {
+  display: none;
   // border-top: 1px solid lightblue;
   background: rgb(240, 239, 239);
-  display: flex;
+  // display: flex;
   flex-direction: column;
   width: 100%;
   height: 100vh;
@@ -391,6 +398,7 @@
 
 .sides {
   flex-grow: 1;
+  width: 100%;
 }
 
 .thanos {
@@ -408,7 +416,6 @@
   // left: 1vw;
   top: 5.5em;
   font-family: Roboto, sans-serif;
-
   & h1 {
     z-index: 1;
     width: 52em;
@@ -417,13 +424,11 @@
     left: 15.7em;
     margin-top: 1.7em;
     border-bottom: 1.25px solid lightgrey;
-
     span {
       font-weight: 600;
       width: 5em;
       font-size: 1.2em;
     }
-
     p {
       width: 10em;
       font-weight: 100;
@@ -434,135 +439,116 @@
   }
 
 }
-
 #about {
   background: rgb(240, 239, 239);
   width: 100%;
-  height: 100vh;
-
   .penBox {
+    box-sizing: border-box;
     position: relative;
-    left: 0;
-    right: 0;
-    top: 5em;
-    margin: -1em auto 0 auto;
-    width: 100%;
-    height: 65%;
+    margin: 5em auto 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     .pens {
+      box-sizing: border-box;
       margin: 1.5em;
-      height: 16rem;
-      width: 32rem;
+      height: 15rem;
+      width: 25em;
     }
   }
 }
-
-
-
 #contact {
-  height: 100vh;
   font-family: 'Roboto', sans-serif;
   background: rgb(240, 239, 239);
 }
-
+.contactBox{
+  height: 50em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .topContact {
-  margin: 7em auto;
+  margin: 5em auto 0 auto;
   border: 1px solid black;
   width: 90%;
-  height: 65%;
+  height: 40em;
   background-image: url(../wallhaven-gimp-blur.png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
   form {
-    margin-top: 1rem;
     width: 100%;
     height: 90%;
     display: flex;
-
     .formLeft {
-      margin-top: 5%;
+      margin-top: 5em;
+      display: flex;
+      flex-direction: column;
       width: 50%;
-
       input[type="text"] {
+        position: relative;
+        left: 3em;
         border-radius: 3px;
         font-family: inherit;
         border: none;
-        font-size: 1.35em;
+        font-size: 1.5em;
         width: 50%;
-        height: 8%;
-        margin: 0 25%;
+        height: 2em;
         background-color: transparent;
         background-color: rgba($color: #ffffff, $alpha: 0.9);
-
         &:nth-child(2) {
-          margin-top: 2%;
           width: 40%;
+          top: 2em;
         }
-
         &:nth-child(3) {
-          margin-top: 2%;
           width: 30%;
+          top: 4em;
         }
       }
-
       input[placeholder] {
         color: black;
       }
-
       input::placeholder {
         color: black;
       }
     }
-
     .formRight {
       width: 50%;
-      margin-top: 5%;
-
+      margin: 5em 5em 0 0;
       textarea {
+        padding: 0;
         font-family: 'Roboto', sans-serif;
         border-radius: 3px;
         resize: none;
-        font-size: 2em;
-        margin: 0 auto;
+        font-size: 1.5em;
         display: block;
-        width: 80%;
-        height: 60%;
+        width: 100%;
+        height: 15em;
         background-color: transparent;
         background-color: rgba($color: #ffffff, $alpha: 0.9);
       }
-
       textarea[placeholder] {
         color: black;
       }
-
       textarea::placeholder {
         color: black;
       }
-
     }
   }
 }
-
 .sbmtBtn {
+  overflow: hidden;
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
   color: black;
   font-size: 1.25em;
-  margin-top: 5%;
-  margin-left: 75%;
+  margin-top: 1.25em;
+  float: right;
   font-family: 'Roboto', sans-serif;
   border-radius: 3px;
-  display: block;
-  width: 15%;
-  border: 2px solid white;
+  width: 20%;
+  border: 1px solid white;
   transition: 500ms ease-out;
-
-
   &:hover {
     color: white;
     box-shadow: 0px 2px 30px 0px rgba(255, 255, 255, 1);
@@ -573,17 +559,17 @@
 
 //////////
 .bContact {
+  margin-top: 0.1em;
   position: relative;
-  bottom: 1em;
   background: rgb(240, 239, 239);
   width: 100%;
-  margin: 0 auto;
-
   .links {
-    margin: 1em auto;
+    position: relative;
+    margin: 0em auto;
     display: flex;
     justify-content: space-between;
-    width: 45vw;
+    min-width: 20em;
+    max-width: 45vw;
   }
 
   a {
@@ -657,237 +643,19 @@
   }
 }
 
-.hand {
+.last{
   font-family: 'Roboto';
   background: rgb(240, 239, 239);
-  width: 100%;
-
-  .handmade {
-    margin: 0;
+  .made { 
+    position: relative;
     text-align: center;
-    font-size: 2em;
+    font-size: 1em;
   }
 }
 
 @import "./values.scss";
 
-@media only screen and (max-width:$screenLg) and (max-aspect-ratio: 13/9){
-  html {
-    font-size: 0.76em
-  }
-
-  .thanos {
-    width: 3em;
-    z-index: 7;
-    position: relative;
-    top: 12.75em;
-    // left: 102.5em;
-
-  }
-
-  .legend {
-    position: absolute;
-    width: 12em;
-    top: 4.5em;
-    font-family: Roboto, sans-serif;
-
-    & h1 {
-      z-index: 1;
-      // width: 54em;
-      position: relative;
-      top: 4.85em;
-      // left: 16.5em;
-      margin-top: 1.7em;
-      border-bottom: 1.25px solid lightgrey;
-
-      span {
-        font-weight: 600;
-        width: 5em;
-        font-size: 1.2em;
-      }
-
-      p {
-        left: 66em;
-        width: 10em;
-        font-weight: 100;
-        position: relative;
-        font-size: 0.7em;
-      }
-    }
-
-  }
-
-  #projects {
-    height: 120vh;
-    justify-content: space-evenly;
-  }
-
-  /////
-  #about {
-    height: 140vh;
-  }
-
-  /////
-  .projectsContainer {
-    top: 2.5em;
-    width: 90vw;
-  }
-
-  .techImgBox {
-    margin-right: 1em;
-  }
-
-  .box {
-    &:nth-of-type(2) div:nth-child(2) {
-      margin-left: 0.4rem;
-    }
-  }
-
-  ;
-
-  .techImgBox :first-child {
-    top: 0.5rem;
-  }
-}
-
-@media (max-width:$screenMd) {
-  html {
-    font-size: 0.7em;
-  }
-
-  .bigBigBox {
-    top: -4rem;
-  }
-
-  #projects {
-    height: 105vh;
-  }
-
-  .projectsContainer {
-    top: 2.5em;
-    width: 90vw;
-  }
-
-  .thanos {
-    width: 3em;
-    z-index: 7;
-    position: relative;
-    top: 12.75em;
-    // left: 101em;
-  }
-
-  .legend {
-    & h1 {
-      p {
-        left: 64.5em;
-      }
-    }
-  }
-
-  #about {
-    height: 140vh;
-    .penBox {
-      width: 100%;
-      height: 75%;
-    }
-  }
-}
-
-@media (max-width:$screenSm) {
-  html {
-    font-size: 0.6em;
-  }
-
-  .a {
-    font-size: 2em;
-  }
-
-  .projectsContainer {
-    top: 5em;
-  }
-
-  .thanos {
-    top: 5em;
-    left: 86em;
-  }
-
-  #skills {
-    height: 95vh;
-  }
-
-  .legend {
-    top: 3.8em;
-
-    & h1 {
-      width: 45em;
-      top: 0.01em;
-      left: 1.4em;
-      margin-top: 1.9em;
-
-      p {
-        left: 55em;
-      }
-    }
-  }
-
-  #projects {
-    height: 140vh;
-  }
-
-  .bigBigBox {
-    top: 5em;
-  }
-
-  .box {
-    margin-top: 2em;
-  }
-
-  .skillbar {
-    height: 3.5em;
-  }
-
-  .box {
-    &:nth-of-type(2) div:nth-child(2) {
-      margin-left: 0.5em;
-    }
-  }
-
-  .bg {
-    :nth-of-type(1) {
-      height: 3.5em;
-      width: 4em;
-    }
-  }
-
-  .actual {
-    height: 2.25em;
-  }
-
-  .techImgBox :first-child {
-    top: -0.3em;
-  }
-
-  #about {
-    .penBox {
-      margin: 5em auto 0 auto;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      height: 80%;
-
-      .pens {
-        margin: 1rem;
-        height: 8rem;
-        width: 23rem;
-      }
-    }
-  }
-}
-
 @media (max-width:$screenLgPhones) {
-  html {
-    font-size: 0.6em;
-  }
-
   .ham {
     display: block;
   }
@@ -904,402 +672,51 @@
     }
   }
 
-  .a {
-    font-size: 2em;
-  }
-
-  #projects {
-    height: 300vh;
-  }
-
-  .projectsContainer {
-    display: block;
-    top: 5em;
-    width: 90vw;
-    height: 100%;
-  }
-
-  ///done//
-  .projectBox {
-    margin-top: 3em;
-    height: 25em;
-
-    .tech {
-      font-size: 1.75em;
-      margin-top: 0.75em;
-    }
-
-    .techSpecs {
-      font-size: 1.75em;
-      margin-top: 0.25em;
-    }
-
-    .projectBox-titel {
-      font-size: 1.65em;
-    }
-
-    .tryIt {
-      font-weight: 600;
-      font-size: 2em;
-      color: #000;
-      left: 15.5em;
-      bottom: 2em;
-    }
-
-    .slide-container ul {
-      width: 35em;
-
-      li {
-        img {
-          height: 12em;
-        }
-      }
-    }
-  }
-
-  //
-
-  #skills {
-    height: 75vh;
-  }
-
-  .bigBigBox {
-    top: -4rem;
-  }
-
-  .skillbar {
-    margin-bottom: 1.1em;
-    height: 2em;
-  }
-
-  .bg {
-    :nth-of-type(1) {
-      height: inherit;
-      width: 4em;
-    }
-  }
-
-  .bigBox {
-    margin-top: 20rem;
-    width: 20em;
-    ////////move the skillbars
-    right: 5em;
-  }
-
-  .box {
-    margin-left: 0.9rem;
-    margin-top: 1em;
-
-    .techImgBox {
-      margin-right: 1em;
-    }
-  }
-
-  .techImgBox :first-child {
-    /////////////////////////////////////////////////////////////////////////////////////under
-    width: 1.7em;
-    top: 0.25rem;
-  }
-
-  .img2 {
-    position: relative;
-    left: 0.25em;
-    font-size: 0.8em;
-  }
-
-  .box {
-    &:nth-of-type(2) div:nth-child(2) {
-      margin-left: 0.4em;
-    }
-  }
-
-  .techImgBox3>.img {
-    top: 0.125em;
-  }
-
-  .techImgBox4>.img {
-    top: 0.5em;
-  }
-
-  .techImgBox6>.img {
-    top: -0.1em;
-  }
-
-  .thanos {
-    top: 11em;
-    left: 40em;
-  }
-
-  .legend {
-    width: 21em;
-    left: 1vw;
-    top: 5em;
-
-    & h1 {
-      width: 26em;
-      top: 3em;
-      // left: 2em;
-      margin-top: 2.1em;
-
-      span {
-        font-weight: 600;
-        width: 5em;
-        font-size: 1.5em;
-      }
-
-      p {
-        font-weight: 400;
-        width: 10em;
-        font-weight: 100;
-        left: 34.4em;
-        font-size: 0.6em;
-      }
-    }
-
-  }
-
-  #about {
-    height: 300vh;
-    .penBox {
-      margin: 7em auto 0 auto;
-      width: 100%;
-      height: 96%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-
-      .pens {
-        margin: 1.5em;
-        height: 16.55rem;
-        width: 32rem;
-      }
-    }
-  }
-
-  #contact {
-    height: 105vh;
-  }
-
-  .topContact {
-    form {
-      margin-top: 1rem;
-      display: block;
-
-      .formLeft {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        right: 15.5%;
-        margin-top: 12.5%;
-        width: 100%;
-
-        input[type="text"] {
-          border-radius: 3px;
-          font-family: inherit;
-          border: none;
-          font-size: 1.75em;
-          width: 50%;
-          height: 8%;
-          margin: 0 25%;
-          background-color: transparent;
-          background-color: rgba($color: #ffffff, $alpha: 0.9);
-        }
-      }
-
-      .formRight {
-        position: relative;
-        top: 5%;
-        width: 100%;
-        height: inherit;
-
-        textarea {
-          width: 80%;
-          height: 65%;
-          background-color: transparent;
-          background-color: rgba($color: #ffffff, $alpha: 0.9);
-        }
-
-      }
-    }
-  }
-
-  .sbmtBtn {
-    box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    font-size: 1.25em;
-    margin-top: 5%;
-    margin-left: 75%;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 3px;
-    display: block;
-    width: 15%;
-    border: 2px solid white;
-    transition: 500ms ease-out;
-  }
-
-  //////////
-  .bContact {
-    background: rgb(240, 239, 239);
-    width: 100%;
-    height: 5%;
+  .topContact{
     margin: 0 auto;
+    height: 35em;
+     form{
+      flex-direction: column;
+      .formLeft {
+        margin-top: 1em;
+        height: 30%;
+        input[type="text"] {
+          position: relative;
+          left: 50%;
+          font-size: 1.25em;
+          width: 100%;
+          height: 2em;
+          &:nth-child(2) {
+            width: 95%;
+            top: 0.5em;
+          }
+          &:nth-child(3) {
+            width: 90%;
+            top: 1em;
+          }
+        }
+      }
 
-    .links {
-      margin: 3em auto;
-      display: flex;
-      justify-content: space-between;
-      width: 70vw;
-    }
-
-    a {
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      transition-duration: 0.25s
-    }
-
-    //////
-  }
-
-  .hand {
-    font-family: 'Roboto';
-    background: rgb(240, 239, 239);
-    width: 100%;
-
-    .handmade {
-      text-align: center;
-      font-size: 2em;
-    }
-  }
-}
-
-@media (max-width:$screenMdPhones) {
-  html {
-    font-size: 0.5em;
-  }
-
-  .ham {
-    font-size: 1.6em;
-    padding: 0.1rem 0rem 1.4em 0rem;
-  }
-
-  #projects {
-    height: 265vh;
-  }
-
-  .slide-container ul {
-    width: 30em;
-
-    li {
-      img {
-        width: 90%;
+      .formRight{
+        height: 50%;
+        margin: 0 auto;
+      textarea{
         height: 12em;
       }
-    }
-  }
-  .bigBox {
-    margin-top: 20rem;
-    width: 20em;
-    ////////move the skilbars
-    right: 6.5em;
-  }
-  .bigBigBox {
-    top: -4rem;
-  }
-
-  .thanos {
-    width: 2.5em;
-    top: 11.5em;
-    left: 41em;
-  }
-
-  .legend {
-    width: 45em;
-    top: 4.6em;
-
-    & h1 {
-      width: 27.75em;
-      top: 3em;
-      // left: 2.5em;
-      margin-top: 1.95em;
-
-      p {
-        left: 28.1em;
-        font-size: 0.73em;
       }
-    }
+      .sbmtBtn {
+        font-size: 1em;
+        width: 40%;
+      }
+     }
+   } 
+   .links{
+    bottom: 3em;
   }
+
 }
-
-@media (max-width:$screenSmPhones) {
-  html {
-    font-size: 0.46em;
-  }
-
-
-
-  .slide-container ul {
-    width: 30em;
-
-    li {
-      img {
-        width: 90%;
-        height: 12em;
-      }
-    }
-  }
-
-  .projectBox {
-    .tryIt {
-      left: 14.7em;
-    }
-  }
-
-
-
-  .thanos {
-    width: 2.5em;
-    top: 11em;
-    left: 40em;
-  }
-
-  .legend {
-    z-index: 6;
-    width: 40em;
-    top: 2em;
-
-    & h1 {
-      width: 27.5em;
-      top: 4.85em;
-      // left: 0.45em;
-
-      span {
-        font-weight: 600;
-        width: 5em;
-        font-size: 1.2em;
-      }
-
-      p {
-        width: 10em;
-        font-weight: 100;
-        left: 28.5em;
-      }
-    }
-
-  }
-
-  .techImgBox3>.img {
-    top: 0.05em;
-  }
-
-  .techImgBox6>.img {
-    top: -0.25em;
-  }
 
   
-
-  #contact {
-    height: 100vh;
-  }
-}
+   
+  
+  

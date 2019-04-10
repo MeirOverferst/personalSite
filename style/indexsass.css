@@ -48,7 +48,7 @@
   background: #f0efef;
   color: black;
   font-size: 1.6em;
-  padding: 0.1rem 0rem 1.35rem 0rem;
+  padding: 0.1em 0em 0.1em 0em;
   display: none;
 }
 
@@ -183,34 +183,29 @@
 }
 
 #projects {
-  height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #f0efef;
 }
 
 .h1Titel {
-  margin-top: 0rem;
   position: relative;
-  top: 0.75em;
+  top: 1.25em;
   font-size: 3em;
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
 .projectsContainer {
-  top: 2.75em;
+  margin: 5em auto 0 auto;
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 80vw;
-  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -225,6 +220,12 @@
   height: 20em;
   margin: 1.25em;
   font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 763px) {
+  .projectBox {
+    margin: 1.25em auto;
+  }
 }
 
 .projectBox .projectBox-titel {
@@ -323,10 +324,8 @@
 }
 
 #skills {
+  display: none;
   background: #f0efef;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -402,6 +401,7 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  width: 100%;
 }
 
 .thanos {
@@ -446,17 +446,13 @@
 #about {
   background: #f0efef;
   width: 100%;
-  height: 100vh;
 }
 
 #about .penBox {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
-  left: 0;
-  right: 0;
-  top: 5em;
-  margin: -1em auto 0 auto;
-  width: 100%;
-  height: 65%;
+  margin: 5em auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -468,22 +464,36 @@
 }
 
 #about .penBox .pens {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 1.5em;
-  height: 16rem;
-  width: 32rem;
+  height: 15rem;
+  width: 25em;
 }
 
 #contact {
-  height: 100vh;
   font-family: 'Roboto', sans-serif;
   background: #f0efef;
 }
 
+.contactBox {
+  height: 50em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .topContact {
-  margin: 7em auto;
+  margin: 5em auto 0 auto;
   border: 1px solid black;
   width: 90%;
-  height: 65%;
+  height: 40em;
   background-image: url(../wallhaven-gimp-blur.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -491,7 +501,6 @@
 }
 
 .topContact form {
-  margin-top: 1rem;
   width: 100%;
   height: 90%;
   display: -webkit-box;
@@ -500,30 +509,38 @@
 }
 
 .topContact form .formLeft {
-  margin-top: 5%;
+  margin-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 50%;
 }
 
 .topContact form .formLeft input[type="text"] {
+  position: relative;
+  left: 3em;
   border-radius: 3px;
   font-family: inherit;
   border: none;
-  font-size: 1.35em;
+  font-size: 1.5em;
   width: 50%;
-  height: 8%;
-  margin: 0 25%;
+  height: 2em;
   background-color: transparent;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
 .topContact form .formLeft input[type="text"]:nth-child(2) {
-  margin-top: 2%;
   width: 40%;
+  top: 2em;
 }
 
 .topContact form .formLeft input[type="text"]:nth-child(3) {
-  margin-top: 2%;
   width: 30%;
+  top: 4em;
 }
 
 .topContact form .formLeft input[placeholder] {
@@ -548,18 +565,18 @@
 
 .topContact form .formRight {
   width: 50%;
-  margin-top: 5%;
+  margin: 5em 5em 0 0;
 }
 
 .topContact form .formRight textarea {
+  padding: 0;
   font-family: 'Roboto', sans-serif;
   border-radius: 3px;
   resize: none;
-  font-size: 2em;
-  margin: 0 auto;
+  font-size: 1.5em;
   display: block;
-  width: 80%;
-  height: 60%;
+  width: 100%;
+  height: 15em;
   background-color: transparent;
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -585,18 +602,18 @@
 }
 
 .sbmtBtn {
+  overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: white;
   color: black;
   font-size: 1.25em;
-  margin-top: 5%;
-  margin-left: 75%;
+  margin-top: 1.25em;
+  float: right;
   font-family: 'Roboto', sans-serif;
   border-radius: 3px;
-  display: block;
-  width: 15%;
-  border: 2px solid white;
+  width: 20%;
+  border: 1px solid white;
   -webkit-transition: 500ms ease-out;
   transition: 500ms ease-out;
 }
@@ -611,22 +628,23 @@
 }
 
 .bContact {
+  margin-top: 0.1em;
   position: relative;
-  bottom: 1em;
   background: #f0efef;
   width: 100%;
-  margin: 0 auto;
 }
 
 .bContact .links {
-  margin: 1em auto;
+  position: relative;
+  margin: 0em auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 45vw;
+  min-width: 20em;
+  max-width: 45vw;
 }
 
 .bContact a {
@@ -722,182 +740,18 @@
           transform: scale(1.5);
 }
 
-.hand {
+.last {
   font-family: 'Roboto';
   background: #f0efef;
-  width: 100%;
 }
 
-.hand .handmade {
-  margin: 0;
+.last .made {
+  position: relative;
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
 }
 
-@media only screen and (max-width: 1440px) and (max-aspect-ratio: 13 / 9) {
-  html {
-    font-size: 0.76em;
-  }
-  .thanos {
-    width: 3em;
-    z-index: 7;
-    position: relative;
-    top: 12.75em;
-  }
-  .legend {
-    position: absolute;
-    width: 12em;
-    top: 4.5em;
-    font-family: Roboto, sans-serif;
-  }
-  .legend h1 {
-    z-index: 1;
-    position: relative;
-    top: 4.85em;
-    margin-top: 1.7em;
-    border-bottom: 1.25px solid lightgrey;
-  }
-  .legend h1 span {
-    font-weight: 600;
-    width: 5em;
-    font-size: 1.2em;
-  }
-  .legend h1 p {
-    left: 66em;
-    width: 10em;
-    font-weight: 100;
-    position: relative;
-    font-size: 0.7em;
-  }
-  #projects {
-    height: 120vh;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  #about {
-    height: 140vh;
-  }
-  .projectsContainer {
-    top: 2.5em;
-    width: 90vw;
-  }
-  .techImgBox {
-    margin-right: 1em;
-  }
-  .box:nth-of-type(2) div:nth-child(2) {
-    margin-left: 0.4rem;
-  }
-  .techImgBox :first-child {
-    top: 0.5rem;
-  }
-}
-
-@media (max-width: 1280px) {
-  html {
-    font-size: 0.7em;
-  }
-  .bigBigBox {
-    top: -4rem;
-  }
-  #projects {
-    height: 105vh;
-  }
-  .projectsContainer {
-    top: 2.5em;
-    width: 90vw;
-  }
-  .thanos {
-    width: 3em;
-    z-index: 7;
-    position: relative;
-    top: 12.75em;
-  }
-  .legend h1 p {
-    left: 64.5em;
-  }
-  #about {
-    height: 140vh;
-  }
-  #about .penBox {
-    width: 100%;
-    height: 75%;
-  }
-}
-
-@media (max-width: 1024px) {
-  html {
-    font-size: 0.6em;
-  }
-  .a {
-    font-size: 2em;
-  }
-  .projectsContainer {
-    top: 5em;
-  }
-  .thanos {
-    top: 5em;
-    left: 86em;
-  }
-  #skills {
-    height: 95vh;
-  }
-  .legend {
-    top: 3.8em;
-  }
-  .legend h1 {
-    width: 45em;
-    top: 0.01em;
-    left: 1.4em;
-    margin-top: 1.9em;
-  }
-  .legend h1 p {
-    left: 55em;
-  }
-  #projects {
-    height: 140vh;
-  }
-  .bigBigBox {
-    top: 5em;
-  }
-  .box {
-    margin-top: 2em;
-  }
-  .skillbar {
-    height: 3.5em;
-  }
-  .box:nth-of-type(2) div:nth-child(2) {
-    margin-left: 0.5em;
-  }
-  .bg :nth-of-type(1) {
-    height: 3.5em;
-    width: 4em;
-  }
-  .actual {
-    height: 2.25em;
-  }
-  .techImgBox :first-child {
-    top: -0.3em;
-  }
-  #about .penBox {
-    margin: 5em auto 0 auto;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    height: 80%;
-  }
-  #about .penBox .pens {
-    margin: 1rem;
-    height: 8rem;
-    width: 23rem;
-  }
-}
-
-@media (max-width: 426px) {
-  html {
-    font-size: 0.6em;
-  }
+@media (max-width: 600px) {
   .ham {
     display: block;
   }
@@ -912,324 +766,48 @@
     margin-top: 1.5em;
     margin-bottom: 1.25em;
   }
-  .a {
-    font-size: 2em;
-  }
-  #projects {
-    height: 300vh;
-  }
-  .projectsContainer {
-    display: block;
-    top: 5em;
-    width: 90vw;
-    height: 100%;
-  }
-  .projectBox {
-    margin-top: 3em;
-    height: 25em;
-  }
-  .projectBox .tech {
-    font-size: 1.75em;
-    margin-top: 0.75em;
-  }
-  .projectBox .techSpecs {
-    font-size: 1.75em;
-    margin-top: 0.25em;
-  }
-  .projectBox .projectBox-titel {
-    font-size: 1.65em;
-  }
-  .projectBox .tryIt {
-    font-weight: 600;
-    font-size: 2em;
-    color: #000;
-    left: 15.5em;
-    bottom: 2em;
-  }
-  .projectBox .slide-container ul {
-    width: 35em;
-  }
-  .projectBox .slide-container ul li img {
-    height: 12em;
-  }
-  #skills {
-    height: 75vh;
-  }
-  .bigBigBox {
-    top: -4rem;
-  }
-  .skillbar {
-    margin-bottom: 1.1em;
-    height: 2em;
-  }
-  .bg :nth-of-type(1) {
-    height: inherit;
-    width: 4em;
-  }
-  .bigBox {
-    margin-top: 20rem;
-    width: 20em;
-    right: 5em;
-  }
-  .box {
-    margin-left: 0.9rem;
-    margin-top: 1em;
-  }
-  .box .techImgBox {
-    margin-right: 1em;
-  }
-  .techImgBox :first-child {
-    width: 1.7em;
-    top: 0.25rem;
-  }
-  .img2 {
-    position: relative;
-    left: 0.25em;
-    font-size: 0.8em;
-  }
-  .box:nth-of-type(2) div:nth-child(2) {
-    margin-left: 0.4em;
-  }
-  .techImgBox3 > .img {
-    top: 0.125em;
-  }
-  .techImgBox4 > .img {
-    top: 0.5em;
-  }
-  .techImgBox6 > .img {
-    top: -0.1em;
-  }
-  .thanos {
-    top: 11em;
-    left: 40em;
-  }
-  .legend {
-    width: 21em;
-    left: 1vw;
-    top: 5em;
-  }
-  .legend h1 {
-    width: 26em;
-    top: 3em;
-    margin-top: 2.1em;
-  }
-  .legend h1 span {
-    font-weight: 600;
-    width: 5em;
-    font-size: 1.5em;
-  }
-  .legend h1 p {
-    font-weight: 400;
-    width: 10em;
-    font-weight: 100;
-    left: 34.4em;
-    font-size: 0.6em;
-  }
-  #about {
-    height: 300vh;
-  }
-  #about .penBox {
-    margin: 7em auto 0 auto;
-    width: 100%;
-    height: 96%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  #about .penBox .pens {
-    margin: 1.5em;
-    height: 16.55rem;
-    width: 32rem;
-  }
-  #contact {
-    height: 105vh;
+  .topContact {
+    margin: 0 auto;
+    height: 35em;
   }
   .topContact form {
-    margin-top: 1rem;
-    display: block;
-  }
-  .topContact form .formLeft {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    right: 15.5%;
-    margin-top: 12.5%;
-    width: 100%;
+  }
+  .topContact form .formLeft {
+    margin-top: 1em;
+    height: 30%;
   }
   .topContact form .formLeft input[type="text"] {
-    border-radius: 3px;
-    font-family: inherit;
-    border: none;
-    font-size: 1.75em;
-    width: 50%;
-    height: 8%;
-    margin: 0 25%;
-    background-color: transparent;
-    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    left: 50%;
+    font-size: 1.25em;
+    width: 100%;
+    height: 2em;
+  }
+  .topContact form .formLeft input[type="text"]:nth-child(2) {
+    width: 95%;
+    top: 0.5em;
+  }
+  .topContact form .formLeft input[type="text"]:nth-child(3) {
+    width: 90%;
+    top: 1em;
   }
   .topContact form .formRight {
-    position: relative;
-    top: 5%;
-    width: 100%;
-    height: inherit;
-  }
-  .topContact form .formRight textarea {
-    width: 80%;
-    height: 65%;
-    background-color: transparent;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  .sbmtBtn {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    background-color: white;
-    color: black;
-    font-size: 1.25em;
-    margin-top: 5%;
-    margin-left: 75%;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 3px;
-    display: block;
-    width: 15%;
-    border: 2px solid white;
-    -webkit-transition: 500ms ease-out;
-    transition: 500ms ease-out;
-  }
-  .bContact {
-    background: #f0efef;
-    width: 100%;
-    height: 5%;
+    height: 50%;
     margin: 0 auto;
   }
-  .bContact .links {
-    margin: 3em auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 70vw;
-  }
-  .bContact a {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    -webkit-transition-duration: 0.25s;
-            transition-duration: 0.25s;
-  }
-  .hand {
-    font-family: 'Roboto';
-    background: #f0efef;
-    width: 100%;
-  }
-  .hand .handmade {
-    text-align: center;
-    font-size: 2em;
-  }
-}
-
-@media (max-width: 375px) {
-  html {
-    font-size: 0.5em;
-  }
-  .ham {
-    font-size: 1.6em;
-    padding: 0.1rem 0rem 1.4em 0rem;
-  }
-  #projects {
-    height: 265vh;
-  }
-  .slide-container ul {
-    width: 30em;
-  }
-  .slide-container ul li img {
-    width: 90%;
+  .topContact form .formRight textarea {
     height: 12em;
   }
-  .bigBox {
-    margin-top: 20rem;
-    width: 20em;
-    right: 6.5em;
+  .topContact form .sbmtBtn {
+    font-size: 1em;
+    width: 40%;
   }
-  .bigBigBox {
-    top: -4rem;
-  }
-  .thanos {
-    width: 2.5em;
-    top: 11.5em;
-    left: 41em;
-  }
-  .legend {
-    width: 45em;
-    top: 4.6em;
-  }
-  .legend h1 {
-    width: 27.75em;
-    top: 3em;
-    margin-top: 1.95em;
-  }
-  .legend h1 p {
-    left: 28.1em;
-    font-size: 0.73em;
-  }
-}
-
-@media (max-width: 320px) {
-  html {
-    font-size: 0.46em;
-  }
-  .slide-container ul {
-    width: 30em;
-  }
-  .slide-container ul li img {
-    width: 90%;
-    height: 12em;
-  }
-  .projectBox .tryIt {
-    left: 14.7em;
-  }
-  .thanos {
-    width: 2.5em;
-    top: 11em;
-    left: 40em;
-  }
-  .legend {
-    z-index: 6;
-    width: 40em;
-    top: 2em;
-  }
-  .legend h1 {
-    width: 27.5em;
-    top: 4.85em;
-  }
-  .legend h1 span {
-    font-weight: 600;
-    width: 5em;
-    font-size: 1.2em;
-  }
-  .legend h1 p {
-    width: 10em;
-    font-weight: 100;
-    left: 28.5em;
-  }
-  .techImgBox3 > .img {
-    top: 0.05em;
-  }
-  .techImgBox6 > .img {
-    top: -0.25em;
-  }
-  #contact {
-    height: 100vh;
+  .links {
+    bottom: 3em;
   }
 }
 /*# sourceMappingURL=indexsass.css.map */
