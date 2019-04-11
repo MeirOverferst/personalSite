@@ -435,7 +435,7 @@ margin-top: 4em;
 .cover {
   width: inherit;
   height: inherit;
-  background-image: url(../../profile-Website/wallhaven-120534.png);
+  background-image: url(../wallhaven-120534.png);
   background-size: cover;
   display: flex;
   flex-direction: column-reverse;
@@ -870,7 +870,10 @@ font-size: 1em;
       margin-bottom: 1.25em;
     }
   }
-
+  .dec{
+    font-size: 0.8em;   
+  }
+  
   .topContact{
     margin: 0 auto;
     height: 35em;
@@ -912,6 +915,7 @@ font-size: 1em;
    .links{
     bottom: 3em;
   }
+
 
 }
 
