@@ -83,7 +83,7 @@ $(document).ready(function () {
 		if (wS > (hT + hH - wH) && (hT > wS) && (wS + wH > hT + hH)) {
 			$('.skillbar').each(function () {
 				$(this).find('.skillbar-bar').animate({
-					width: $(this).attr('howMuch')
+					height: $(this).attr('howMuch')
 				}, 5000);
 			});
 
