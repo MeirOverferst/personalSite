@@ -767,7 +767,7 @@ font-size: 1em;
     margin: 0em auto;
     display: flex;
     justify-content: space-between;
-    min-width: 20em;
+    min-width: 17.75em;
     max-width: 45vw;
   }
 
@@ -883,23 +883,26 @@ font-size: 1em;
         margin-top: 2em;
         height: 30%;
         input[type="text"] {
+          padding: 0;
           position: relative;
           left: 30%;
-          font-size: 1.25em;
-          width: 100%;
+          font-size: 1.2em;
+          width: 105%;
           height: 1.25em;
           &:nth-child(2) {
-            width: 95%;
+            width: 100%;
             top: 0.5em;
           }
           &:nth-child(3) {
-            width: 90%;
+            width: 95%;
             top: 1em;
           }
         }
       }
 
       .formRight{
+        
+        font-size: 1em;
         height: 50%;
         width: 70%;
         margin: 0 auto;
