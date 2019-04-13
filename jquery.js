@@ -1,4 +1,21 @@
 $(document).ready(function () {
+
+	let userTime = new Date().getHours();
+	let msg;
+	let morning = ('Good morning');
+	let afternoon = ('Good afternoon');
+	let evening = ('Good evening');
+
+	if (userTime >= 0 && userTime < 12) {
+		msg = morning; 
+
+	} else if (userTime >= 12 && userTime < 17) {
+		msg = afternoon;
+
+	} else if (userTime >= 17 && userTime < 24) {
+		msg = evening;
+	}
+    $('.greet').prepend(msg);
 	
 	$(".ham").click(function () {
 		$("#nav-icon").toggleClass('open');
