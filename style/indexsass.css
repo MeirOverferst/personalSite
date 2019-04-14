@@ -340,6 +340,12 @@
   height: 100vh;
 }
 
+@media (max-width: 600px) {
+  #skills {
+    height: 70vh;
+  }
+}
+
 .skillsGridConainer {
   margin-top: 4em;
   display: -webkit-box;
