@@ -376,6 +376,10 @@
   text-align: center;
 }
 
+.png img {
+  margin-top: 0.2em;
+}
+
 .png1 {
   -ms-grid-row: 7;
   -ms-grid-row-span: 1;
