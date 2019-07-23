@@ -251,8 +251,8 @@
   font-size: 1em;
   text-decoration: none;
   color: #000;
-  left: 17em;
-  bottom: 2.25rem;
+  float: right;
+  right: 1em;
 }
 
 @media (max-width: 763px) {
