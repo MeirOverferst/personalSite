@@ -1,3 +1,18 @@
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Thin;
+  src: url("../fonts/Roboto-Thin.ttf");
+}
+
 * {
   margin: 0;
 }
@@ -13,7 +28,7 @@
 
 .navigator {
   z-index: 999;
-  background: #f0efef;
+  background: white;
   position: relative;
   width: 100%;
   display: -webkit-box;
@@ -37,7 +52,7 @@
   display: block;
   font-size: 1.75em;
   text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto-Light;
 }
 
 .a {
@@ -45,7 +60,7 @@
 }
 
 .ham {
-  background: #f0efef;
+  background: white;
   color: black;
   font-size: 1.6em;
   padding: 0.1em 0em 0.175em 0em;
@@ -124,15 +139,15 @@
 }
 
 .blrImg {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100vh;
   width: 100%;
-  background-image: url(../stickersorgslate.jpg);
-  -webkit-filter: blur(9px);
-          filter: blur(9px);
+  background-image: url(../8308_1.jpg);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
   background-position: center;
   background-size: cover;
 }
@@ -141,9 +156,8 @@
   background-color: black;
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  border-radius: 0.2rem;
+  border: 1px solid #f1f1f1;
+  border-radius: 0.1rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -177,20 +191,20 @@
   text-align: center;
   margin-top: 2rem;
   font-size: 2em;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto-Thin;
 }
 
 #projects {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #f0efef;
+  background: white;
 }
 
 .h1Titel {
   position: relative;
   top: 1.25em;
   font-size: 3em;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto-Light;
   text-align: center;
 }
 
@@ -331,7 +345,7 @@
 
 #skills {
   margin: 0 auto;
-  background: #f0efef;
+  background: white;
   height: 100vh;
 }
 
@@ -645,7 +659,7 @@
 }
 
 #about {
-  background: #f0efef;
+  background: white;
   width: 100%;
 }
 
@@ -674,7 +688,7 @@
 
 #contact {
   font-family: 'Roboto', sans-serif;
-  background: #f0efef;
+  background: white;
 }
 
 .contactBox {
@@ -831,7 +845,7 @@
 .bContact {
   margin-top: 0.1em;
   position: relative;
-  background: #f0efef;
+  background: white;
   width: 100%;
 }
 
@@ -943,7 +957,7 @@
 
 .last {
   font-family: 'Roboto';
-  background: #f0efef;
+  background: white;
 }
 
 .last .made {
@@ -958,7 +972,7 @@
   }
   .navigator {
     display: none;
-    background: #f0efef;
+    background: white;
     bottom: 2em;
   }
   .navigator .actual {
